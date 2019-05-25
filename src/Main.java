@@ -23,7 +23,7 @@ public class Main {
 
 
             if (userInput == 1) {
-                System.out.println("\n1 do something\n");
+                petList();
             }
             else if (userInput == 2){
                 while (true){
@@ -40,14 +40,23 @@ public class Main {
                 System.out.println("\n3 do something\n");
             }
             else {
-                System.out.println("Done");
-
-                System.exit(0);
+                exitProgram();
             }
 
-        }
+        }//end while (true)
 
 
 
-    }
-}
+    }//end main
+
+    private static void petList(){
+        System.out.println("ID  Name  Age");
+
+    }//end petList
+
+    private static void exitProgram(){
+        System.out.println("Done");
+        System.exit(0);
+    }//end exitProgram
+
+}//end class Main
